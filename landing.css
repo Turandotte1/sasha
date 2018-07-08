@@ -4,6 +4,14 @@
     height: 100%;
 }
 
+.landingImage {
+    background-image: url('welcome.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
 #landing .overlay {
     position: absolute;
     background-color: rgba(0,0,0,0.6);
@@ -16,21 +24,25 @@
     grid-template-rows: 1fr 2fr 1fr;
 }
 
+.item {
+    color: red ;
+    z-index: 100;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
 .name {
     color: #21091F ;
     grid-column: 1;
     grid-row: 1/ 2;
-    z-index: 100;
-    font-weight: 100;
-    letter-spacing: 2px;
-    padding-left: 30px;
     display: grid;
     align-items: end;
     text-shadow: 0px, 0px, 4px, 0.1px;
+    justify-content: end;
+
 }
 
 .routes {
-    color: red ;
     grid-column: 1;
     grid-row: 2;
     z-index: 100;
@@ -44,10 +56,10 @@
     list-style-type: none;
    }
 
-.landingImage {
-    background-image: url('welcome.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
+.admin {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    align-items: end;
+    justify-content: end;
 }
