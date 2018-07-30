@@ -1,0 +1,119 @@
+#landing > * {
+    width: 100%;
+    text-align: center;
+    color: #F5F7F6;
+    font-weight: 100;
+}
+
+#landing .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    height: 100%;
+}
+
+.comingSoonImage {
+    position: fixed;
+    background-image: url('../img/welcome.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    min-height: 100%;
+    transform: scale(1.3);
+}
+
+.landtitle {
+    position: absolute;
+    font-size: 60px;
+    z-index: 100;
+    letter-spacing: 7px;
+    text-shadow: 5px 5px 14px rgba(61, 61, 61,1.0);
+    top: 20%;
+}
+
+.text {
+    position: absolute;
+    font-size: 20px;
+    width: 100%;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    z-index: 100;
+    top: 45%;
+    text-shadow: 2px 5px 14px #000;
+    letter-spacing: 7px;
+}
+
+.button {
+    position: absolute;
+    z-index: 100;
+    width: 70%;
+    top: 70%;
+    background-color: transparent;
+}
+
+.subscription_form {
+    width: 55%;
+    height: 60px;
+    background-color: transparent;
+    border-bottom: 4px solid #F5F7F6;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.subscription_form:focus {
+    outline: none;
+}
+
+input[type="email"]
+{
+    font-size: 40px;
+    color: #F5F7F6;
+    padding: 10px;
+    cursor: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 1px solid #F5F7F6;
+    -webkit-text-fill-color: #F5F7F6;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(75, 75, 75,1.0) inset;
+}
+
+.paperplane {
+    position: absolute;
+    background-image: url('../icons/paperplane.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    height: 35px;
+    width: 35px;
+    z-index: 100;
+    right: 25%;
+    top: 25%;
+}
+
+.paperplane:hover {
+    opacity: 0.7;
+}
+
+.paperplane:active {
+    opacity: 0.7;
+}
+
+.copyright  {
+    position: absolute;
+    z-index: 100;
+    font-size: 10px;
+    bottom: 3%;
+    letter-spacing: 4px;
+}

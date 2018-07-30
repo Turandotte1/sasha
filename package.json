@@ -1,0 +1,29 @@
+{
+  "name": "gustatorial",
+  "version": "0.0.1",
+  "description": "food in culture",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Turandotte1/sasha.git"
+  },
+  "keywords": [
+    "food",
+    "culture",
+    "gustatorial"
+  ],
+  "author": "mrychkov allauren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Turandotte1/sasha/issues"
+  },
+  "homepage": "https://github.com/Turandotte1/sasha#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.18.3",
+    "pug": "^2.0.3"
+  }
+}

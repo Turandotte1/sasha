@@ -62,3 +62,5 @@ typings/
 .next
 .mailchimpdata.js
 
+# ce putain d'atom
+.DS_store

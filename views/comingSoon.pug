@@ -1,0 +1,37 @@
+doctype html
+head
+title Gustatorialmag
+meta(charset='UTF-8')
+link(rel='stylesheet' href='styles/common.css')
+link(rel='stylesheet' href='styles/comingSoon.css')
+link(rel='stylesheet' href='fonts/font-awesome/css/font-awesome.css')
+link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+form(action='/signup' method='POST')
+#landing
+  .overlay
+  .comingSoonImage
+  h1.landtitle coming soon ...
+  h2.text subscribe to newsletters
+  .button
+    input#email.subscription_form(placeholder='' type='email' onkeypress='return event.keyCode != 13;')
+    script(type='text/javascript').
+      function caca(){
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+      if (xhttp.readyState == 4 && xhttp.status == 200) {
+      console.log(xhttp.responseText);
+      if(xhttp.responseText == "ok")
+      alert('Subscribed');
+      else
+      alert(xhttp.responseText ? xhttp.responseText : 'something went wrong, check your mail and please try again later');
+      }}
+      var email = document.getElementById("email").value;
+      console.log(email);
+      xhttp.open("POST", "/signup", true);
+      xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      if (xhttp.send("email="+email))
+      console.log('ok');;
+      };
+    a.paperplane(onclick='caca()')
+  p.copyright &copy; Gustatorial </br> Photo by Ann Calis
