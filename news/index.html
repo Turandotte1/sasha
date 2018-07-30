@@ -20,7 +20,7 @@
                           <h2 class="newtxt">Subscribe to Newsletters </h2>               
                      </div>
                     <div class="button">
-                        <input class="subscription_form"placeholder="Your Email..." type="email" id="email">
+                        <input class="subscription_form"placeholder="Your Email..." type="email" id="email" onkeypress="return event.keyCode != 13;">
                         <script type="text/javascript">
 
                            function caca(){
@@ -31,7 +31,7 @@
                                    if(xhttp.responseText == "ok")
                                     alert('Subscribed');
                                     else
-                                        alert(xhttp.responseText);
+                                        alert(xhttp.responseText ? xhttp.responseText : 'something went wrong, check your mail and please try again later');
                             }}
 
                              var email = document.getElementById("email").value;
