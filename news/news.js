@@ -6,7 +6,6 @@ const ids = require('./mailchimpdata.js')
 
 
 module.exports =(req, res) =>{
-var ok = 0;
 
 var subscriber = JSON.stringify({
     'email_address': req.body.email, 
@@ -32,21 +31,27 @@ var hreq = http.request(options, (hres) =>{
     });
     hres.on('end',  () => {
         var responseValue = parseInt(response.substr(response.indexOf('"status":') + ('"status":').length));
+        console.log('#debut');
         console.log(response);
+        console.log('#milieu');
+        console.log(responseValue);
         console.log(response.indexOf('Member Exists'));
-         if (responseValue && (responseValue < 300 || (responseValue === 400 && response.indexOf('Member Exists') != -1)))
+        console.log('#fin');
+         if (!responseValue)
          {
          res.send("ok");
         }
         else
-            res.send("ko");
+        {
+            var index = response.indexOf('"detail":') + ('"detail":"').length;
+            res.send(response.substr(index, response.substr(index).indexOf('. ')));
+        }
     });
     hres.on('error', function (e) {
             console.log('ERROR: ' + e.message);
     }); 
 });
 hreq.write(subscriber);
-console.log(ok.toString());
 hreq.end(); 
 
 }
