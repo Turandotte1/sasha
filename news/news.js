@@ -44,7 +44,8 @@ var hreq = http.request(options, (hres) =>{
         else
         {
             var index = response.indexOf('"detail":') + ('"detail":"').length;
-            res.send(response.substr(index, response.substr(index).indexOf('. ')));
+            console.log(response.substr(index).indexOf("\","));
+            res.send(response.substr(index, response.substr(index).indexOf(".\"") == -1 ? (response.substr(index).indexOf("\",")) : (response.substr(index).indexOf(".\""))));
         }
     });
     hres.on('error', function (e) {
