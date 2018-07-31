@@ -27,18 +27,11 @@ var hreq = http.request(options, (hres) => {
     });
     hres.on('end',  () => {
         var responseValue = parseInt(response.substr(response.indexOf('"status":') + ('"status":').length));
-        console.log('#debut');
-        console.log(response);
-        console.log('#milieu');
-        console.log(responseValue);
-        console.log(response.indexOf('Member Exists'));
-        console.log('#fin');
         if (!responseValue)
             res.send("ok");
         else
         {
             var index = response.indexOf('"detail":') + ('"detail":"').length;
-            console.log(response.substr(index).indexOf("\","));
             res.send(response.substr(index, response.substr(index).indexOf(".\"") == -1 ? (response.substr(index).indexOf("\",")) : (response.substr(index).indexOf(".\""))));
         }
     });
