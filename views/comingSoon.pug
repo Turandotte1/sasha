@@ -4,18 +4,28 @@ head
     meta(charset='UTF-8')
     link(rel='stylesheet' href='styles/common.css')
     link(rel='stylesheet' href='styles/comingSoon.css')
+    link(href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet")
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
-    form(action='/signup' method='POST')
-      #landing
-  .overlay
-  .comingSoonImage
-  h1.landtitle coming soon ...
-  h2.text subscribe to newsletters
-  .button
-    input#email.subscription_form(placeholder='', type='email', onkeypress='return event.keyCode != 13;')
-    a.paperplane(onclick='post_email()')
-  p.copyright
-    | &copy; Gustatorial 
-    br
-    |  Photo by Ann Calis
-script(type='text/javascript', src='js/script.js')
+body
+  div#comingSoon
+    div.container
+      header
+        img(class='logo' src="img/logo.png")
+      div.form
+        img.main(src="img/welcome.jpeg")
+        div.text
+          p.soon COMING SOON
+          p  Get your free copy of curated collection of gourmet hotels
+        form(action='/signup' method='POST')
+        input(placeholder="ENTER YOUR EMAIL" type='email', 
+          onkeypress='return event.keyCode != 13;')
+        button(type="submit" class="button-email") SUBMIT  
+  script(type='text/javascript' src='js/script.js')
+
+
+
+
+    
+      
+    
+  
