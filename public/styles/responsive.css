@@ -1,0 +1,47 @@
+@media screen and (max-device-width: 900px) {
+    .welcome-photo {
+      width: 100% !important;
+      height: 55% !important;
+      bottom: 0% !important;
+    }
+
+    .overlay {
+      height: 55% !important;
+      width: 100% !important;
+      bottom: 0% !important;
+    }
+
+    .aside {
+      height: 45% !important;
+      width: 100% !important;
+    }
+
+    .logo {
+      max-height: 100px !important;
+    }
+
+    .sub-text {
+      padding-top: 40px !important;
+      font-size: 30px !important;
+    }
+
+    .soon {
+      font-size: 45px !important;
+    }
+
+    .sub-soon {
+      font-size: 25px !important;
+      line-height: 40px !important;
+    }
+
+    #comingSoon input {
+      width: 80% !important;
+      font-size: 20px !important;
+    }
+
+    .button-email {
+      font-size: 30px !important;
+      padding: 15px 20px !important;
+      margin-top: 50px !important;
+      }
+  }
