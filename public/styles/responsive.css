@@ -1,14 +1,12 @@
 @media screen and (max-device-width: 900px) and (orientation: portrait){
     .welcome-photo {
-      width: 100% !important;
-      height: 55% !important;
-      bottom: 0% !important;
-    }
-
+	 margin-top: 900px !important;
+     width: 100% !important;
+     height: 40% !important;
+	}
     .overlay {
-      height: 55% !important;
-      width: 100% !important;
-      bottom: 0% !important;
+      height: 0% !important;
+      width: 0% !important;
     }
 
     .aside {
@@ -18,6 +16,7 @@
 
     .logo {
       max-height: 100px !important;
+	  max-width: 100% !important;
     }
 
     .sub-text {
@@ -44,4 +43,30 @@
       padding: 15px 20px !important;
       margin-top: 50px !important;
       }
-  }
+}
+
+
+@media all and (max-height: 860px) and (max-width:1100px) {
+	#comingSoon {
+		min-height: 860px !important;
+	}
+}
+
+@media all and (max-height: 700px) and (min-width: 1100px){
+	#comingSoon {
+		min-height: 700px !important;
+	}
+    .welcome-photo {
+     height: 700px !important;
+	 }
+    .overlay{
+     height: 700px !important;
+	 }
+}
+
+@media all and (max-width: 660px){
+    .welcome-photo {
+     width: 0% !important;
+     height: 0% !important;
+	}
+	}
