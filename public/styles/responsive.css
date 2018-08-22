@@ -1,4 +1,9 @@
 @media all and (max-width: 1100px){
+    .welcome-photo {
+	 margin-top: 900px !important;
+     width: 100% !important;
+     height: 40% !important;
+	}
     .overlay {
       height: 0% !important;
       width: 0% !important;
@@ -11,6 +16,7 @@
 
     .logo {
       max-height: 100px !important;
+	  max-width: 100% !important;
     }
 
     .sub-text {
@@ -60,8 +66,7 @@
 
 @media all and (max-width: 660px){
     .welcome-photo {
-	 margin-top: 900px !important;
-     width: 100% !important;
-     height: 40% !important;
-    }
-}
+     width: 0% !important;
+     height: 0% !important;
+	}
+	}
