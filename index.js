@@ -22,15 +22,15 @@ app.use('/icons', express.static('public/icons'));
 app.use('/js', express.static('public/js'));
 
 app.get('/', function (req, res) {
-		res.render('comingSoon', {messages: req.flash('info')});
+		res.render('comingSoon', {messages: req.flash('caca')});
 });
 
 app.post('/signup', function (req, res) {
     newsLetter(req, res, (err, data) =>{
 		if (err)
-		{
-			return res.redirect('/?e='+ encodeURIComponent('Incorrect username or password'));
-		}
+			{
+				return res.redirect('/?e='+ encodeURIComponent('Incorrect username or password'));
+			}
 			res.redirect('/');
 		}
 	);
