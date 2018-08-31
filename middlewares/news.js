@@ -1,9 +1,8 @@
 const http = require ('https');
 const ids = require('../config/keys.js')
 
-module.exports = (req, res) => {
+module.exports = (req, res, callback) => {
 
-console.log(req.body)
 var subscriber = JSON.stringify({
     'email_address': req.body.email,
     'status': 'subscribed',
@@ -30,14 +29,14 @@ let hreq = http.request(options, (hres) => {
     hres.on('end',  () => {
 		response = JSON.parse(response);
         if (!response.status)
-            res.send("ok");
+			callback(err)
         else
         {
-			res.send(response.detail);
+			callback(null, response.detail);
         }
     });
     hres.on('error', function (e) {
-        console.log('ERROR: ' + e.message);
+		callback(err)
         });
     });
     hreq.write(subscriber);
