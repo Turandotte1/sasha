@@ -15,11 +15,11 @@ app.use('/img', express.static('public/img'));
 app.use('/icons', express.static('public/icons'));
 app.use('/js', express.static('public/js'));
 
-app.get('*', function (req, res) {
+app.get('/', function (req, res) {
 		res.render('comingSoon');
 });
 
-app.post('*', function (req, res) {
+app.post('/', function (req, res) {
     newsLetter(req, res);
 });
 
