@@ -1,5 +1,6 @@
-module.exports = {
-    mailchimpInstance   :'us18',
-    listUniqueId        : 'a2a4ea0fb5',
-    mailChimpApiKey     : '2b62581492cabf90369aeafc4a90a5f1-us18'
+if (process.env.NODE_ENV === 'production'){
+	module.exports = require ('./prod');
+}
+else {
+	module.exports = require ('./dev');
 }

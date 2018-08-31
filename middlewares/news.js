@@ -3,6 +3,7 @@ const ids = require('../config/keys.js')
 
 module.exports = (req, res) => {
 
+console.log(req.body)
 var subscriber = JSON.stringify({
     'email_address': req.body.email,
     'status': 'subscribed',
@@ -14,25 +15,25 @@ var options = {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Basic ' + ids.mailChimpApiKey ,
+        'Authorization': 'Token ' + ids .mailChimpApiKey ,
         'Content-Length': subscriber.length
     }
 }
 
-var hreq = http.request(options, (hres) => {
+
+let hreq = http.request(options, (hres) => {
     hres.setEncoding('utf8');
-    var response = '';
+    let response = '';
     hres.on('data',  (data) => {
         response += data;
     });
     hres.on('end',  () => {
-        var responseValue = parseInt(response.substr(response.indexOf('"status":') + ('"status":').length));
-        if (!responseValue)
+		response = JSON.parse(response);
+        if (!response.status)
             res.send("ok");
         else
         {
-            var index = response.indexOf('"detail":') + ('"detail":"').length;
-            res.send(response.substr(index, response.substr(index).indexOf(".\"") == -1 ? (response.substr(index).indexOf("\",")) : (response.substr(index).indexOf(".\""))));
+			res.send(response.detail);
         }
     });
     hres.on('error', function (e) {

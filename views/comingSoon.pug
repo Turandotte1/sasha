@@ -18,9 +18,9 @@ body
         p.soon coming soon
         p.sub-soon While waiting, get your free copy of curated collection of gourmet hotels:
         form(action='/signup' method='POST')
-          input(placeholder="enter your email" type='email', 
+          input(placeholder="enter your email" type='email' name='email', 
                           onkeypress='return event.keyCode != 13;')
-        button(type="submit" class="button-email") submit          
+          button(type="submit" class="button-email") submit          
   script(type='text/javascript' src='js/script.js')
 
 
