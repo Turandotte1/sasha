@@ -1,95 +1,16 @@
-@media screen and (max-width: 900px) and (min-width: 750px) {
-  .logo {
-    max-height: 10vh !important;
-    min-height: 1vh !important;
-    max-width: 40vw !important;
-  }
-
-  .sub-text {
-    font-size: 1.5vw !important;
-  }
-
-  .text-container {
-    margin: 20vh auto 10vw auto !important;
-  }
-
-  .soon {
-    font-size: 2.5vw !important;
-  }
-
-  .sub-soon {
-    font-size: 1.5vw !important;
-  }
-
-  #comingSoon input {
-    width: 60% !important;
-    font-size: 1vw !important;
-    margin-bottom: 10px !important;
-  }
-
-  .button-email {
-    font-size: 1vw !important;
-    padding: 8px 10px !important;
-    margin-top: 3px !important;
-    }
-}
-
-@media screen and (max-width: 750px) and (min-width: 600px) {
-  .aside {
-    width: calc(100% - 400px) !important;
-  }
-
-  .logo {
-    max-height: 20vh !important;
-    min-height: 1vh !important;
-    max-width: 30vw !important;
-  }
-
-  .text-container {
-    margin: 20vh auto 10vw auto !important;
-  }
-
-  .soon {
-    font-size: 2.5vw !important;
-  }
-
-  .sub-text {
-    font-size: 1.5vw !important;
-  }
-
-  .sub-soon {
-    font-size: 1.5vw !important;
-    margin-right: 10px !important;
-    margin-left: 10px !important;
-  }
-
-  #comingSoon input {
-    width: 60% !important;
-    font-size: 1vw !important;
-    margin-bottom: 10px !important;
-    margin-top: 10px !important;
-  }
-
-  .button-email {
-    font-size: 1vw !important;
-    padding: 8px 10px !important;
-    margin-top: 3px !important;
-    }
-}
-
 @media screen and (max-width: 800px) {
   .welcome-photo {
     bottom: 0%;
     width: 100% !important;
-    height: 60% !important;
+    height: 50% !important;
   }
   .overlay {
     bottom: 0%;
-    height: 60% !important;
+    height: 50% !important;
     width: 1000% !important;
   }
   .aside {
-    height: 40% !important;
+    height: 50% !important;
     width: 100% !important;
   }
 
@@ -98,33 +19,37 @@
   }
 
   .logo {
-    max-height: 5vh !important;
+    max-height: 4vh !important;
     max-width: 100% !important;
-    margin: 5% auto 0 auto;
+    margin: 3% auto 0 auto;
   }
 
   .sub-text {
-    padding-top: 0.5vh !important;
+    padding-top: 0vh !important;
     font-size: 1vh !important;
   }
+
   .soon {
-    font-size: 2vh !important;
+    margin: 5vh auto 0 auto!important;
+    font-size: 3vh !important;
   }
 
   .sub-soon {
-    font-size: 1vh !important;
-    line-height: 40px !important;
+    font-size: 1.5vh !important;
+    line-height: 20px !important;
+    margin: 5vh 1vw 0 1vw!important;
   }
 
   #comingSoon input {
     width: 80% !important;
-    font-size: 20px !important;
+    font-size: 1.5vh !important;
+    margin: 2vh !important;
   }
 
   .button-email {
-    font-size: 30px !important;
-    padding: 15px 20px !important;
-    margin-top: 50px !important;
+    font-size: 1.5vh !important;
+    padding: 5px 10px !important;
+    margin-top: 0px !important;
     }
 }
 
