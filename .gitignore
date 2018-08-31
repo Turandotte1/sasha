@@ -61,7 +61,7 @@ typings/
 # next.js build output
 .next
 
-keys.js
+dev.js
 
 # ce putain d'atom
 .DS_store
