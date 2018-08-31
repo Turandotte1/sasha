@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
 		res.render('comingSoon');
 });
 
-app.post('/', function (req, res) {
+app.post('/signup', function (req, res) {
     newsLetter(req, res);
 });
 
