@@ -29,10 +29,10 @@ let hreq = http.request(options, (hres) => {
     hres.on('end',  () => {
 		response = JSON.parse(response);
         if (!response.status)
-			callback(err)
+			callback(null, 'caca')
         else
         {
-			callback(null, response.detail);
+		callback(response.detail);
         }
     });
     hres.on('error', function (e) {
