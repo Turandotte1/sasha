@@ -77,44 +77,42 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-  #comingSoon {
-    height: auto;
-  }
-
+@media screen and (max-width: 800px) {
   .welcome-photo {
-     bottom: 0 !important;
-     width: 100% !important;
-     height: 60% !important;
-  }
-
-  .overlay {
-    bottom: 0!important;
+    bottom: 0%;
+    width: 100% !important;
     height: 60% !important;
+  }
+  .overlay {
+    bottom: 0%;
+    height: 60% !important;
+    width: 1000% !important;
+  }
+  .aside {
+    height: 40% !important;
     width: 100% !important;
   }
 
-  .aside {
-    height: auto !important;
-    width: 100% !important;
+  .text-container {
+    margin: 0 auto 0 auto !important;
   }
 
   .logo {
-    max-height: 100px !important;
+    max-height: 5vh !important;
     max-width: 100% !important;
+    margin: 5% auto 0 auto;
   }
 
   .sub-text {
-    padding-top: 40px !important;
-    font-size: 30px !important;
+    padding-top: 0.5vh !important;
+    font-size: 1vh !important;
   }
-
   .soon {
-    font-size: 45px !important;
+    font-size: 2vh !important;
   }
 
   .sub-soon {
-    font-size: 25px !important;
+    font-size: 1vh !important;
     line-height: 40px !important;
   }
 
@@ -130,19 +128,21 @@
     }
 }
 
-@media screen and (max-device-width: 800px) {
+@media screen and (max-device-width: 800px) and (orientation: portrait) {
     .welcome-photo {
-	     margin-top: 900px !important;
+	     bottom: 0% !important;
        width: 100% !important;
-       height: 40% !important;
+       height: 50% !important;
 	  }
+
     .overlay {
-      height: 0% !important;
-      width: 0% !important;
+      bottom: 0% !important;
+      height: 50% !important;
+      width: 100% !important;
     }
 
     .aside {
-      height: 45% !important;
+      height: 50% !important;
       width: 100% !important;
     }
 
@@ -175,4 +175,96 @@
       padding: 15px 20px !important;
       margin-top: 50px !important;
       }
+}
+
+@media screen and (max-device-width: 1024px) and (min-device-width: 700px)
+                                      and (orientation: portrait) {
+  .welcome-photo {
+     bottom: 0% !important;
+     width: 100% !important;
+     height: 50% !important;
+  }
+
+  .overlay {
+    bottom: 0% !important;
+    height: 50% !important;
+    width: 100% !important;
+  }
+
+  .aside {
+    height: 50% !important;
+    width: 100% !important;
+  }
+
+  .text-container {
+    margin: 5% 5% 0 5% !important;
+  }
+
+  .logo {
+    margin: 5% auto 0% auto !important;
+    max-height: 5vh !important;
+    max-width: 100% !important;
+  }
+
+  .sub-text {
+    padding-top: 0px !important;
+    font-size: 1.5vh !important;
+  }
+
+  .soon {
+    font-size: 2vh !important;
+  }
+
+  .sub-soon {
+    font-size: 25px !important;
+    line-height: 40px !important;
+  }
+
+  #comingSoon input {
+    width: 80% !important;
+    font-size: 1vh !important;
+  }
+
+  .button-email {
+    font-size: 30px !important;
+    padding: 15px 20px !important;
+    margin-top: px !important;
+    }
+}
+
+@media screen and (max-device-width: 900px) and (orientation: landscape) {
+  .logo {
+    margin: 7% auto 0 auto !important;
+    max-height: 10vh !important;
+    min-height: 1vh !important;
+    max-width: 40vw !important;
+  }
+
+  .sub-text {
+    font-size: 1.5vw !important;
+  }
+
+  .text-container {
+    margin: 10% auto 0 auto !important;
+  }
+
+  .soon {
+    font-size: 2.5vw !important;
+  }
+
+  .sub-soon {
+    font-size: 1.5vw !important;
+  }
+
+  #comingSoon input {
+    width: 60% !important;
+    font-size: 1vw !important;
+    margin-bottom: 10px !important;
+  }
+
+  .button-email {
+    font-size: 1vw !important;
+    padding: 8px 10px !important;
+    margin-top: 3px !important;
+    }
 }
