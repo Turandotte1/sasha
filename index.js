@@ -20,12 +20,10 @@ app.get('/', function (req, res) {
 });
 
 app.post('/signup', function (req, res) {
-    newsLetter(req, res, (err, data) =>{
+    newsLetter(req, res, (err, data) => {
 		if (err)
-			{
-				return res.redirect('/?e='+ encodeURIComponent('something went wrong, please check you entered a valid email adress and that you did not already subscribe'));
-			}
-			res.redirect('/?e='+ encodeURIComponent('thanks for subscribing'));
+				return res.redirect('/?e='+ encodeURIComponent('Oops, something went wrong. Try one more time and make sure you haven\'t subscribed in the past!'));
+		res.redirect('/?e='+ encodeURIComponent('Thank you for subscribing!'));
 		}
 	);
 });
