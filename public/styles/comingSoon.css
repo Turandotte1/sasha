@@ -46,6 +46,8 @@
 }
 
 #comingSoon input {
+  -webkit-appearance: none;
+  border-radius: 0;
   font-size: 1.2vh;
   width: 80%;
   background-color: transparent;
