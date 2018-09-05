@@ -9,18 +9,19 @@ head
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
 body
   div#comingSoon
-    img.welcome-photo(src="img/Calis.jpg")
-    div.overlay
-    div.aside
+    div.text-side
       img.logo(src="img/logo.png")
       p.sub-text cultural gourmet magazine
-      div.text-container
+      div.text-side-center
         p.soon coming soon
         p.sub-soon While waiting, get your free copy of curated collection of gourmet hotels:
         form(action='/signup' method='POST')
           input(placeholder="enter your email" type='email' name='email', 
-                          onkeypress='return event.keyCode != 13;')
-          button(type="submit" class="button-email") submit          
+                              onkeypress='return event.keyCode != 13;')
+          br
+          button(type="submit" class="button-email") submit
+    div.photo-side
+      img.welcome-photo(src="img/Calis.jpg")
   script(type='text/javascript' src='js/script.js')
 
 
