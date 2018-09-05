@@ -2,7 +2,9 @@
 	.text-side {
     float: left;
     width: 50%;
-    height: 100%;
+    position: relative;
+    top: 52%;
+    transform: translateY(-50%);
   }
 
 	.photo-side {
@@ -15,5 +17,6 @@
     width: 100%;
     max-height: 100%;
     height: auto;
+    vertical-align: middle;
   }
 }

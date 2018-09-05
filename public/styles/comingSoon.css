@@ -78,14 +78,30 @@ input[type="email"] {
 
 .photo-side {
   height: 50%;
-  display: block;
   z-index: 1;
   width: 100%;
   text-align: center;
 }
 
-.photo-side img {
+.welcome-photo {
+  display: block;
   width: auto;
+  height: auto;
+  max-height: 100%;
+}
+
+.photo-side table {
+  height:100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.photo-side img {
+  width: 70%;
+  text-align: center;
   max-height: 100%;
   height: auto;
+  margin: 0 auto;
 }
