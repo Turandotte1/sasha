@@ -1,9 +1,6 @@
 const express = require('express');
 const parser = require('body-parser');
 const newsLetter = require('./middlewares/news.js');
-const flash = require('express-flash');
-const cookieParser = require('cookie-parser');
-const session = require('express-session');
 
 app = express();
 
@@ -12,9 +9,6 @@ app.set('view engine', 'pug');
 
 app.use(parser.json());
 app.use(parser.urlencoded({extended: true}));
-app.use(cookieParser('keyboard cat'));
-app.use(session({ cookie: { maxAge: 60000 }}));
-app.use(flash());
 
 app.use('/styles', express.static('public/styles'));
 app.use('/img', express.static('public/img'));
@@ -22,16 +16,16 @@ app.use('/icons', express.static('public/icons'));
 app.use('/js', express.static('public/js'));
 
 app.get('/', function (req, res) {
-		res.render('comingSoon', {messages: req.flash('caca')});
+		res.render('comingSoon');
 });
 
 app.post('/signup', function (req, res) {
     newsLetter(req, res, (err, data) =>{
 		if (err)
 			{
-				return res.redirect('/?e='+ encodeURIComponent(err));
+				return res.redirect('/?e='+ encodeURIComponent('something went wrong, please check you entered a valid email adress and that you did not already subscribe'));
 			}
-			res.redirect('/');
+			res.redirect('/?e='+ encodeURIComponent('thanks for subscribing'));
 		}
 	);
 });
