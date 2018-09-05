@@ -1,4 +1,4 @@
-@media all and (min-width: 36em) and (min-device-width: 600px) {
+@media all and (min-width: 30em) and (min-device-width: 500px) {
 	.text-side {
     float: left;
     width: 50%;
