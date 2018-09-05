@@ -17,7 +17,7 @@
 }
 
 .logo {
-  margin-top: 7vh;
+  margin-top: 4vh;
   max-width: 70%;
   object-fit: contain;
 }
@@ -30,7 +30,7 @@
 .text-side-center {
   margin: 0 10%;
   position: relative;
-  top: 30%;
+  top: 35%;
   transform: translateY(-50%);
 }
 
