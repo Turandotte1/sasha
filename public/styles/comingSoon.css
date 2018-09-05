@@ -56,7 +56,7 @@
   border-bottom: 1px solid #1E1023;
   letter-spacing: 3px;
   padding: 10px 5px;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 input[type="email"] {
@@ -75,8 +75,7 @@ input[type="email"] {
 }
 
 .button-email:hover {
-  background-color: Black;
-  border: none;
+  background-color: #200F24;
   color: white;
 }
 

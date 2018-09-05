@@ -19,7 +19,10 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     border: 1px solid #F5F7F6;
-    -webkit-text-fill-color: #F5F7F6;
-    -webkit-background-fill-color: white;
-    -webkit-box-shadow: 0 0 0px 1000px rgba(75, 75, 75,1.0) inset;
+    -webkit-text-fill-color: black;
+    -webkit-box-shadow: 0 0 0 100px #ffffff inset;
+}
+
+*:focus {
+    outline: none;
 }
