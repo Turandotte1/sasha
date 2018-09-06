@@ -23,7 +23,7 @@ app.post('/signup', function (req, res) {
     newsLetter(req, res, (err, data) => {
 		if (err)
 				return res.redirect('/?e='+ encodeURIComponent('Oops, something went wrong. Try one more time and make sure you haven\'t subscribed in the past.'));
-		res.redirect('/?e='+ encodeURIComponent('Thank you for subscribing!'));
+		res.redirect('/?e='+ encodeURIComponent('Your curated list will be served shortly.'));
 		}
 	);
 });
