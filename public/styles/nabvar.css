@@ -1,0 +1,23 @@
+#navbar {
+  padding: 2vh;
+}
+
+.nav-logo {
+  float: left;
+  max-width: 10vh;
+}
+
+#navbar .btn {
+  background-color: transparent;
+  color: #718093;
+  box-shadow: none;
+}
+
+.btn i {
+  font-size: 5vh !important;
+}
+
+.dropdown-trigger {
+  float: right;
+
+}

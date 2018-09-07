@@ -1,4 +1,13 @@
-let getAllUrlParams = () =>{
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var options = {};
+    var instances = M.Dropdown.init(elems, options);
+    var instance = M.Dropdown.getInstance(elems);
+    instance.open();
+});
+
+let getAllUrlParams = () => {
+
   let queryString = window.location.search.slice(1);
   var obj = {};
   if (queryString) {
@@ -55,7 +64,7 @@ function response(){
 	return decodeURIComponent(parse_url.e).charAt(0).toUpperCase() + decodeURIComponent(parse_url.e).slice(1);
 };
 
-document.getElementById('dialog').innerHTML = response();
+/*document.getElementById('dialog').innerHTML = response();
 
 let span = document.getElementsByClassName('close')[0];
 
@@ -67,4 +76,4 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+}*/

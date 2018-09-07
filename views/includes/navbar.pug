@@ -1,0 +1,20 @@
+div#navbar
+  img.nav-logo(src="img/logo.png")
+  a.dropdown-trigger.btn(href='#' data-target='dropdown1')
+    i.material-icons drag_handle
+    ul#dropdown1.dropdown-content
+      li
+        a(href="/female")
+          | female inspirations
+      li
+        a(href="/interviews")
+          | interviews
+      li
+        a(href="/news")
+          | news
+      li
+        a(href="/mood")
+          | mood
+      li(tabindex="-1").divider
+        a(href="/admin")
+          | admin

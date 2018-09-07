@@ -1,27 +1,15 @@
 doctype html
 head
-  title gustatorialmag
+  title gustatorial
   meta(charset='UTF-8')
+  meta(name="viewport" content="width=device-width, initial-scale=1.0")
   link(rel='stylesheet' href='styles/landing.css')
+  link(rel='stylesheet' href='styles/nabvar.css')
+  link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css")
+  link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
   script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
-#comingSoon
-  .landingImage
-  .landingContent
-    h3.name.item gustatorialmag
-    .routes.item
-      li
-        a(href='') AAAA1
-      li
-        a(href='') AAAA1
-      li
-        a(href='') AAAA1
-      li
-        a(href='') AAAA1
-      li
-        a(href='') AAAA1
-      li
-        a(href='') AAAA1
-      li
-        a(href='') AAAA1
-    h7.admin.item connexion admin
-script(src='script.js')
+body
+  #comingSoon
+    include includes/navbar.pug
+  script(type='text/javascript' src='js/script.js')
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js")
