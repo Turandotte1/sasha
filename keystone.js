@@ -1,5 +1,5 @@
-require('dotenv').config();
 const keystone = require('keystone');
+const keys = require('./routes/config/keys.js');
 
 keystone.init({
 	'name': 'gustatorial',
@@ -8,11 +8,13 @@ keystone.init({
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'pug',
-	'mongo': process.env.MONGO_URI,
 	'auto update': false,
 	'session': true,
 	'auth': true,
 	'user model': 'User',
+	'mongo': keys.MONGO_URI,
+	'cloudinary config': keys.CLOUDINARY_URL,
+	'cookie secret': keys.COOKIE_SECRET
 });
 
 keystone.import('models');
