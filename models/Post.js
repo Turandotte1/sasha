@@ -1,10 +1,5 @@
-var keystone = require('keystone');
-var Types = keystone.Field.Types;
-
-/**
- * Post Model
- * ==========
- */
+const keystone = require('keystone');
+const Types = keystone.Field.Types;
 
 var Post = new keystone.List('Post', {
 	map: { name: 'title' },
