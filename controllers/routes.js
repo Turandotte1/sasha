@@ -1,3 +1,5 @@
+const newsLetter = require('../middlewares/news.js');
+
 module.exports = app => {
 
   app.get('/', function (req, res) {

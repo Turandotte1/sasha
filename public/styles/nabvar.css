@@ -1,23 +1,22 @@
 #navbar {
-  padding: 2vh;
+  background-image:
+          radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%),
+          radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%,
+          rgba(0,0,0,0.50) 100%);
+  background-blend-mode: screen;
+  overflow: hidden;
+  display: block;
+  padding: 5vh 7vw;
+  height: 10vh;
 }
 
 .nav-logo {
   float: left;
-  max-width: 10vh;
+  max-width: 45vw;
 }
 
 #navbar .btn {
-  background-color: transparent;
-  color: #718093;
+  background: transparent;
   box-shadow: none;
-}
-
-.btn i {
-  font-size: 5vh !important;
-}
-
-.dropdown-trigger {
-  float: right;
 
 }

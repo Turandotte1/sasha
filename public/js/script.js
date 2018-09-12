@@ -64,7 +64,7 @@ function response(){
 	return decodeURIComponent(parse_url.e).charAt(0).toUpperCase() + decodeURIComponent(parse_url.e).slice(1);
 };
 
-/*document.getElementById('dialog').innerHTML = response();
+document.getElementById('dialog').innerHTML = response();
 
 let span = document.getElementsByClassName('close')[0];
 
@@ -76,4 +76,4 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}*/
+}

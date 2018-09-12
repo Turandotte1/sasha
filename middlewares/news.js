@@ -1,4 +1,4 @@
-const http = require ('https');
+const https = require ('https');
 const ids = require('../config/keys.js')
 
 module.exports = (req, res, callback) => {
@@ -20,7 +20,7 @@ var options = {
 }
 
 
-let hreq = http.request(options, (hres) => {
+let hreq = https.request(options, (hres) => {
     hres.setEncoding('utf8');
     let response = '';
     hres.on('data',  (data) => {
