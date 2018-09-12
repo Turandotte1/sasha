@@ -4,8 +4,8 @@
   "description": "food in culture",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node keystone.js",
+    "dev": "nodemon keystone.js"
   },
   "repository": {
     "type": "git",
@@ -23,15 +23,19 @@
   },
   "homepage": "https://github.com/Turandotte1/sasha#readme",
   "dependencies": {
+    "keystone": "4.0.0-beta.5",
+    "lodash": "^4.13.1",
+    "pug": "2.0.0-beta11",
+    "dotenv": "4.0.0",
+    "keystone-email": "1.0.5",
+    "async": "2.1.4",
     "cookie-parser": "^1.4.3",
     "express": "^4.16.3",
     "express-flash": "0.0.2",
     "express-session": "^1.15.6",
-    "heroku-ssl-redirect": "0.0.4",
     "materialize-css": "^0.100.2",
     "nodemon": "^1.18.4",
     "pug": "^2.0.3",
-    "sessions": "0.0.2-7",
-    "sweetalert": "^2.1.0"
+    "sessions": "0.0.2-7"
   }
 }
