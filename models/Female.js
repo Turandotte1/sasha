@@ -1,13 +1,12 @@
-var keystone = require('keystone');
-var Types = keystone.Field.Types;
-
-/**
- * Gallery Model
- * =============
- */
+const keystone = require('keystone');
+const Types = keystone.Field.Types;
 
 var Female = new keystone.List('Female', {
-	autokey: { from: 'name', path: 'key', unique: true },
+	autokey: {
+		from: 'name',
+		path: 'key',
+		unique: true
+	},
 });
 
 Female.add({
