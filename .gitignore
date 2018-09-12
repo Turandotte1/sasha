@@ -62,8 +62,7 @@ typings/
 .next
 
 dev.js
- example_com.key
- example_com.csr
+gustatorial_com.key
 
 # ce putain d'atom
 .DS_store
