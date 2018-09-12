@@ -1,23 +1,16 @@
 #navbar {
-  padding: 2vh;
+  display: block;
+  padding: 5vh 7vw;
+  height: 10vh;
 }
 
 .nav-logo {
   float: left;
-  max-width: 10vh;
+  max-width: 45vw;
 }
 
 #navbar .btn {
-  background-color: transparent;
-  color: #718093;
+  background: transparent;
   box-shadow: none;
-}
-
-.btn i {
-  font-size: 5vh !important;
-}
-
-.dropdown-trigger {
-  float: right;
 
 }
