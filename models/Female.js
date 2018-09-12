@@ -13,7 +13,6 @@ var Female = new keystone.List('Female', {
 Female.add({
 	name: { type: String, required: true },
 	title: { type: String},
-	image: { type: Types.CloudinaryImages },
 	story: {type: Types.Html, wysiwyg: true, height: 300},
 });
 
