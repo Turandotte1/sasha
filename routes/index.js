@@ -24,6 +24,7 @@ exports = module.exports = function (app) {
   })
 
   app.get('/female', routes.views.female)
+  app.all('/female/:female', routes.views.portrait)
 
   app.get('/interviews', function (req, res) {
   	res.render('interviews');

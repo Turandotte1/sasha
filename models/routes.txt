@@ -1,0 +1,10 @@
+CMS
+	'/main'
+		CMS
+			Dernier article
+		Contenu pur
+
+	'/female'
+		CMS
+			
+	,  '/interviews',  '/news',  '/mood'

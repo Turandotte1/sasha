@@ -17,15 +17,15 @@ body
 	include includes/navbar.pug
 	div#Femalebackground
 		div.container
-			if female.length
-				each Female in female
-					div.FemaleBlock
-						p.Femaletitle= Female.name
-						if Female.image.exists
-								img.Femaleimg(src=Female.image.secure_url)
-						if Female.shortContent
-							div.Femaletext
-								p.text-justify!= Female.shortContent
-								a(href='/female/' + (Female.key)) caca
+			if female
+				div.FemaleBlock.border.border-light
+					p.Femaletitle= female.name
+					if female.image.exists
+							img.Femaleimg(src=female.image.secure_url)
+					if female.fullContent
+						div.Femaletext
+							p.text-justify!= female.fullContent
+			else
+				p caca du dessous
 	script(type='text/javascript' src='js/script.js')
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js")

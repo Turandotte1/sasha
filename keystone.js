@@ -29,8 +29,11 @@ keystone.set('locals', {
 keystone.set('routes', require('./routes'));
 
 keystone.set('nav', {
-	female: 'Female',
 	users: 'users',
+	female: 'Female',
+	interviews: 'Interviews',
+	news: 'News',
+	mood: 'Mood',
 });
 
 keystone.start();

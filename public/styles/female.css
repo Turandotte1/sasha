@@ -1,0 +1,40 @@
+#Femalebackground {
+	height: 100%;
+	margin-top:56px;
+	background-image:
+			radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%),
+			radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%,
+			rgba(0,0,0,0.50) 100%);
+	overflow: auto;
+}
+
+.Femalecontent
+{
+	margin: 0;
+}
+
+.FemaleBlock
+{
+	margin-top: 5px;
+	display: inline-block;
+	width: 100%;
+}
+
+.Femaletitle
+{
+	height: 30px;
+	text-align: center;
+}
+
+.Femaleimg
+{
+	float : right;
+	width: 100px;
+	height: 100px;
+}
+
+.Femaletext
+{
+	min-height: 100%;
+	margin-right: 50px;
+}

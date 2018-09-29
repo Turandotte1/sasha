@@ -1,7 +1,7 @@
 const keystone = require('keystone');
 const Types = keystone.Field.Types;
 
-var Female = new keystone.List('Female', {
+var Mood = new keystone.List('Mood', {
 	autokey: {
 		from: 'name',
 		path: 'key',
@@ -9,12 +9,11 @@ var Female = new keystone.List('Female', {
 	},
 });
 
-Female.add({
+Mood.add({
 	name: { type: String, required: true },
 	title: { type: String},
 	image: { type:Types.CloudinaryImage},
-	shortContent: {type: Types.Html, wysiwyg: false, height: 100},
-	fullContent: {type: Types.Html, wysiwyg: false, height: 300},
+	content: {type: Types.Html, wysiwyg: true, height: 300},
 });
 
-Female.register();
+Mood.register();
