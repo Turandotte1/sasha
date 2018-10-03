@@ -14,25 +14,34 @@ exports = module.exports = function (req, res) {
 	view.on('init', function (next) {
 			lastArticles('Mood')
 				.exec((err, results) => {
+					console.log(results);
 					locals.mood = results;
-					next(err);
 			});
+		});
+	view.on('init', function (next) {
 			lastArticles('Female')
 				.exec((err, results) =>{
+					console.log(results);
 					locals.female = results;
 					next(err);
 			});
+		});
+	view.on('init', function (next) {
 			lastArticles('News')
 				.exec((err, results) =>{
+					console.log(results);
 					locals.news = results;
 					next(err);
 			});
+		});
+	view.on('init', function (next) {
 			lastArticles('Interviews')
 				.exec((err, results) =>{
+					console.log(la + results);
 					locals.interviews = results;
 					next(err);
 			});
 	});
-	console.log(locals.female);
+	console.log('coucou');
 	view.render('landing');
 };
