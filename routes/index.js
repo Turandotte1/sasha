@@ -19,10 +19,7 @@ exports = module.exports = function (app) {
   		res.render('comingSoon');
   })
 
-  app.get('/main', function (req, res) {
-    res.render('landing');
-  })
-
+  app.get('/main', routes.views.main)
   app.get('/female', routes.views.female)
   app.all('/female/:female', routes.views.portrait)
 
