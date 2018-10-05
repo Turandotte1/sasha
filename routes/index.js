@@ -20,8 +20,8 @@ exports = module.exports = function (app) {
   })
 
   app.get('/main', routes.views.main)
-  app.get('/female', routes.views.female)
-  app.all('/female/:female', routes.views.portrait)
+  app.get('/woman', routes.views.woman)
+  app.all('/woman/:woman', routes.views.portrait)
 
   app.get('/interviews', function (req, res) {
   	res.render('interviews');

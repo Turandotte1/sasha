@@ -3,7 +3,7 @@ head
 	title gustatorial
 	meta(charset='UTF-8')
 	meta(name="viewport" content="width=device-width, initial-scale=1.0")
-	link(rel='stylesheet' href='styles/female.css')
+	link(rel='stylesheet' href='styles/woman.css')
 	link(rel='stylesheet' href='styles/common.css')
 	link(rel='stylesheet' href='styles/landing.css')
 	link(rel='stylesheet' href='styles/nabvar.css')
@@ -15,17 +15,17 @@ head
 	script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous")
 body
 	include includes/navbar.pug
-	div#Femalebackground
+	div#Womanbackground
 		div.container
-			if female.length
-				each Female in female
-					div.FemaleBlock
-						p.Femaletitle= Female.name
-						if Female.image.exists
-								img.Femaleimg(src=Female.image.secure_url)
-						if Female.shortContent
-							div.Femaletext
-								p.text-justify!= Female.shortContent
-								a(href='/female/' + (Female.key)) caca
+			if woman.length
+				each Woman in woman
+					div.WomanBlock
+						p.Womantitle= Woman.name
+						if Woman.image.exists
+								img.Womanimg(src=Woman.image.secure_url)
+						if Woman.shortContent
+							div.Womantext
+								p.text-justify!= Woman.shortContent
+								a(href='/woman/' + (Woman.key)) caca
 	script(type='text/javascript' src='js/script.js')
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js")

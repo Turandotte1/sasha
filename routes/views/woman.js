@@ -5,7 +5,7 @@ exports = module.exports = function (req, res) {
 	let view = new keystone.View(req, res);
 	let locals = res.locals;
 
-	locals.section = 'female';
-	view.query('female', keystone.list('Female').model.find().sort());
-	view.render('female');
+	locals.section = 'woman';
+	view.query('woman', keystone.list('Woman').model.find().sort());
+	view.render('woman');
 };

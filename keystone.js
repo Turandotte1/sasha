@@ -12,7 +12,6 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User',
-	'mongo': keys.MONGO_URI,
 	'cloudinary config': keys.CLOUDINARY_URL,
 	'cookie secret': keys.COOKIE_SECRET
 });
@@ -30,7 +29,7 @@ keystone.set('routes', require('./routes'));
 
 keystone.set('nav', {
 	users: 'users',
-	female: 'Female',
+	woman: 'Woman',
 	interviews: 'Interviews',
 	news: 'News',
 	mood: 'Mood',
